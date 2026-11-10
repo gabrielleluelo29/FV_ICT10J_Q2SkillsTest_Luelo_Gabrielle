@@ -23,3 +23,13 @@ non_metals = {
     "Og": ("Oganesson", 118, 294),
 }
 
+def check_element(e):
+    element_Name = document.getElementById("elements").value
+    var2 = non_metals.get(element_Name, ("Element not found", " - ", " - "))
+    document.getElementById("output1").innerHTML = f"""
+    Symbol: {element_Name}<br>
+    Element: {var2[0]}<br>
+    Atomic Number: {var2[1]}<br>
+    Atomic Mass: {var2[2]}
+    """
+
